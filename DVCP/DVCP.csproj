@@ -183,6 +183,7 @@
     <Compile Include="CommonData\GetData.cs" />
     <Compile Include="CommonData\PostData.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\FileController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
