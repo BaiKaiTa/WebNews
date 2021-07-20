@@ -2007,7 +2007,6 @@
     <Content Include="Content\elfinder\sounds\rm.wav" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
-    <Content Include="Content\images\7mau_logo.jpg" />
     <Content Include="Content\js\share.js" />
     <Content Include="Content\photoswipe\dist\default-skin\default-skin.css" />
     <Content Include="Content\photoswipe\dist\default-skin\default-skin.png" />
@@ -2068,7 +2067,6 @@
     <Content Include="Content\tether\tether.css" />
     <Content Include="Content\tether\tether.min.css" />
     <Content Include="Content\web\images\12.jpg" />
-    <Content Include="Content\web\images\7mau_logo.jpg" />
     <Content Include="Content\web\images\logo-black.png" />
     <Content Include="Content\web\images\logo-white.png" />
     <Content Include="Content\web\images\top-post1.jpg" />
@@ -2331,6 +2329,12 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ElFinder.Net\ElFinder.Net.csproj">
+      <Project>{4635b781-a1a1-40a3-b57d-26cf552695bb}</Project>
+      <Name>ElFinder.Net</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202012141408180_Initialization.resx">

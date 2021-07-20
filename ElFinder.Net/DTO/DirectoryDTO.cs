@@ -20,4 +20,4 @@ namespace ElFinder.DTO
         [DataMember(Name = "dirs")]
         public byte ContainsChildDirs { get; set; }
     }
-}//
+}
