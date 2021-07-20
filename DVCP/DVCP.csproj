@@ -2007,6 +2007,7 @@
     <Content Include="Content\elfinder\sounds\rm.wav" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\images\7mau_logo.jpg" />
     <Content Include="Content\js\share.js" />
     <Content Include="Content\photoswipe\dist\default-skin\default-skin.css" />
     <Content Include="Content\photoswipe\dist\default-skin\default-skin.png" />
@@ -2067,6 +2068,7 @@
     <Content Include="Content\tether\tether.css" />
     <Content Include="Content\tether\tether.min.css" />
     <Content Include="Content\web\images\12.jpg" />
+    <Content Include="Content\web\images\7mau_logo.jpg" />
     <Content Include="Content\web\images\logo-black.png" />
     <Content Include="Content\web\images\logo-white.png" />
     <Content Include="Content\web\images\top-post1.jpg" />

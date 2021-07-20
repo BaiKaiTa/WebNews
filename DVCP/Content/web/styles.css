@@ -121,12 +121,12 @@ a{
     margin-bottom: 0;
 }
 
-    .toplink a {
-        color: #aaa;
-    }
+	.toplink a {
+		color: black;
+	}
 
         .toplink a:hover {
-            color: #F9B500;
+            color: #ff0000;
         }
 
 .popular-post a, .popular-post h5 {
@@ -542,16 +542,17 @@ header .main-menu2 li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 
 .color-white{ color: #fff; }
 .color-green{ color: #36D98A; }
-.color-ash{ color: #aaa; }
-.color-ccc{ color: #ccc; }
+.color-ash{ color: black; }
+.color-ccc{ color: black; }
 .color-grey{ color: #ccc; }
-.color-primary{ color: #F9B500; }
+.color-primary{ color: black; }
 .color-black{ color: #111; }
 .color-lite-black{ color: #888; }
 
 /* BACKGROUND COLOR*/
 .bg-191 {
-    background: #191919;
+	background-color: purple; /* Dành cho các trình duyệt không hỗ trợ gradient*/
+	background-image: linear-gradient(to right, purple, pink,red,yellow,green);
 }
 .bg-primary{ background: #F9B500!important; }
 
