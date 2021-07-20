@@ -1,4 +1,4 @@
-## 7-Màu - Trang tin tức vế games
+## 7-Màu - Trang tin tức về games
 Một trang web tin tức MVC 5.  
 Code first, javascript AJAX, bootstrap 4, thư viện quản lý file ELFinder.  
 Authentication: Forms Authentication (cookie)  
