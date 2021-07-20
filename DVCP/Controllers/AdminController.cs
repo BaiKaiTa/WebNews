@@ -9,7 +9,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-namespace DVCP.Controllers
+namespace DVCP.Controllers 
 {
     [Authorize(Roles = "admin,editor")]
     public class AdminController : Controller
