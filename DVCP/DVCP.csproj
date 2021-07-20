@@ -183,7 +183,6 @@
     <Compile Include="CommonData\GetData.cs" />
     <Compile Include="CommonData\PostData.cs" />
     <Compile Include="Controllers\AdminController.cs" />
-    <Compile Include="Controllers\FileController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
@@ -2331,12 +2330,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ElFinder.Net\ElFinder.Net.csproj">
-      <Project>{4635b781-a1a1-40a3-b57d-26cf552695bb}</Project>
-      <Name>ElFinder.Net</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202012141408180_Initialization.resx">
