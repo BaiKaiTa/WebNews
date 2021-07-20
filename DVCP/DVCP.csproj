@@ -225,6 +225,7 @@
     <Compile Include="ViewModel\ViewPostViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="7MAU.ico" />
     <Content Include="Content\AdminLTE\dist\css\adminlte.css" />
     <Content Include="Content\AdminLTE\dist\css\adminlte.min.css" />
     <Content Include="Content\AdminLTE\dist\img\AdminLTELogo.png" />
@@ -2342,6 +2343,9 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>7MAU.ico</ApplicationIcon>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
