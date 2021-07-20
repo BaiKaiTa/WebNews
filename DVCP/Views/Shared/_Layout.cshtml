@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Đại Việt Cổ Phong</title>
+    <title>@ViewBag.Title - Trang tin tức về Games</title>
     <link rel="icon" href="~/Content/images/dvcp.ico" type="image/x-icon" />
     <link href="~/Content/web/styles.css" rel="stylesheet" />
     <link href="~/Content/web/web.css" rel="stylesheet" />
@@ -61,15 +61,15 @@
             <a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
 
             <ul class="main-menu2 link" id="main-menu">
-                <li><a href="/">HOME</a></li>
+                <li><a href="/">Trang Chủ</a></li>
                 <li class="drop-down">
-                    <a href="/trieu-dai">TRIỀU ĐẠI<i class="fa fa-caret-down"></i></a>
+                    <a href="/games">GAMES<i class="fa fa-caret-down"></i></a>
                     <ul class="drop-down-menu drop-down-inner">
                         @foreach (var i in data.GetEnumShowList().Take(6))
                         {
-                            <li><a href="/trieu-dai/@i.slug-@i.value">@i.showname</a></li>
+                            <li><a href="/games/@i.slug-@i.value">@i.showname</a></li>
                         }
-                        <li><a href="/trieu-dai/">XEM TẤT CẢ</a></li>
+                        <li><a href="/games/">XEM TẤT CẢ</a></li>
                     </ul>
                 </li>
                 <li class="drop-down">
@@ -104,7 +104,7 @@
                     <div class="col-sm-4">
                         <div class="mb-30">
                             <h5 class="color-primary mb-20"><b>FACEBOOK</b></h5>
-                            <div class="fb-page" data-href="https://www.facebook.com/daivietcophong/" data-tabs="timeline" data-width="" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/daivietcophong/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/daivietcophong/">Đại Việt Cổ Phong - 大越古風 - VietnamAncient</a></blockquote></div>
+                            <div class="fb-page" data-href="https://www.facebook.com/7maucsgo/" data-tabs="timeline" data-width="" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/7maucsgo/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/7maucsgo/">7-Màu News</a></blockquote></div>
                         </div><!-- mb-30 -->
                     </div><!-- col-md-4 -->
 
@@ -135,7 +135,7 @@
                         <div class="mb-30">
                             <a href="#"><img src="~/Content/web/images/logo-white.png"></a>
                             <p class="mtb-20 color-ccc">
-                                Đại Việt Cổ Phong là hội chuyên nghiên cứu về văn hóa,phong tục,kiến trúc cũng như lịch sử của Việt Nam thời xưa.
+                                7-Màu là nơi cập nhật tin tức chuyên về games nhanh nhất và chính xác nhất.
                             </p>
                             <p class="color-ash">
                                 Copyright &copy;

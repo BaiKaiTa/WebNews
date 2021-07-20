@@ -44,32 +44,31 @@ namespace DVCP.ViewModel
     public enum Dynasty
     {
         //0
-        [Display(Name = "Timeline")]
-        Timeline = 0,
+        [Display(Name = "Sea of Thieves")]
+        SOT = 0,
         //1.. etc
-        [Display(Name = "Thời Hồng Bàng")]
-        HongBang = 1,
-        [Display(Name = "Nhà Đinh")]
-        Dinh = 2,
-        [Display(Name = "Nhà Tiền Lê")]
-        Early_Le = 3,
-        [Display(Name = "Nhà Lý")]
-        Ly = 4,
-        [Display(Name = "Nhà Trần")]
-        Tran = 5,
-        [Display(Name = "Nhà Hậu Lê")]
-        Later_Le = 6,
-        [Display(Name = "Nhà Lê Trung Hưng")]
-        LeTrungHung = 7,
-        [Display(Name = "Nhà Tây Sơn")]
-        TaySon = 8,
-        [Display(Name = "Nhà Nguyễn")]
-        Nguyen = 9,
-        [Display(Name = "Triều Khác")]
+        [Display(Name = "League of Legends")]
+        LOL = 1,
+        [Display(Name = "CS:GO")]
+        CSGO = 2,
+        [Display(Name = "PUBG")]
+        PUBG = 3,
+        [Display(Name = "GTA V")]
+        GTA = 4,
+        [Display(Name = "Valorant")]
+        Valorant = 5,
+        [Display(Name = "Call of Duty")]
+        CallofDuty = 6,
+        [Display(Name = "Fortnite")]
+        Fortnite = 7,
+        [Display(Name = "World of Tanks")]
+        WorldofTanks = 8,
+        [Display(Name = "Genshin Impact")]
+        Genshin = 9,
+        [Display(Name = "Game Khác")]
         Khac = 10,
     }
-   
-    
+
     public class newPostViewModel
     {
         [RequiredSelectListItem(ErrorMessage = "Vui lòng chọn ít nhất 1 tag")]
