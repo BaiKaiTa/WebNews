@@ -75,7 +75,7 @@ namespace DVCP.Controllers
                     Post pOST = new Post
                     {
                         userid = user.userid,
-                        dynasty = model.dynasty.ToString(),
+                        Games = model.Games.ToString(),
                         create_date = DateTime.Now,
                         AvatarImage = model.AvatarImage,
                         post_content = model.post_content,
@@ -506,8 +506,8 @@ namespace DVCP.Controllers
             newPostViewModel model = new newPostViewModel();
             if (post.tbl_User.username == User.Identity.Name || User.IsInRole("admin"))
             {
-                Dynasty dn;
-                Enum.TryParse(post.dynasty, out dn);
+                Games dn;
+                Enum.TryParse(post.Games, out dn);
                 Rated rated;
                 Enum.TryParse(post.Rated.ToString(), out rated);
                 PostType type;
@@ -527,7 +527,7 @@ namespace DVCP.Controllers
                 model = new newPostViewModel
                 {
                     post_id = post.post_id,
-                    dynasty = dn,
+                    Games = dn,
                     post_content = post.post_content,
                     AvatarImage = post.AvatarImage,
                     post_review = post.post_review,
@@ -601,7 +601,7 @@ namespace DVCP.Controllers
                     {
                         return RedirectToAction("ListPost");
                     }
-                    pOST.dynasty = model.dynasty.ToString();
+                    pOST.Games = model.Games.ToString();
                     pOST.edit_date = DateTime.Now;
                     pOST.AvatarImage = model.AvatarImage;
                     pOST.post_content = model.post_content;

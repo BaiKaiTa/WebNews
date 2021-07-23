@@ -189,9 +189,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202012141408180_Initialization.cs" />
-    <Compile Include="Migrations\202012141408180_Initialization.Designer.cs">
-      <DependentUpon>202012141408180_Initialization.cs</DependentUpon>
+    <Compile Include="Migrations\202107230456345_data.cs" />
+    <Compile Include="Migrations\202107230456345_data.Designer.cs">
+      <DependentUpon>202107230456345_data.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DVCPContext.cs" />
@@ -2303,8 +2303,8 @@
     <Content Include="Views\Home\Category.cshtml" />
     <Content Include="Views\Home\Search.cshtml" />
     <Content Include="Views\Home\_Search.cshtml" />
-    <Content Include="Views\Home\Dynasty.cshtml" />
-    <Content Include="Views\Home\DynastyAll.cshtml" />
+    <Content Include="Views\Home\Games.cshtml" />
+    <Content Include="Views\Home\GamesAll.cshtml" />
     <Content Include="Views\Home\_ViewByCategory.cshtml" />
     <Content Include="Views\Home\CategoryAll.cshtml" />
   </ItemGroup>
@@ -2336,8 +2336,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202012141408180_Initialization.resx">
-      <DependentUpon>202012141408180_Initialization.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202107230456345_data.resx">
+      <DependentUpon>202107230456345_data.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

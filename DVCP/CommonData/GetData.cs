@@ -119,7 +119,7 @@ namespace DVCP
         }
         public IEnumerable<EnumShowList> GetEnumShowList()
         {
-            List<ViewModel.Dynasty> dynasties = GetEnumList<ViewModel.Dynasty>();
+            List<ViewModel.Games> dynasties = GetEnumList<ViewModel.Games>();
             List<EnumShowList> enums = new List<EnumShowList>();
             foreach(var i in dynasties)
             {

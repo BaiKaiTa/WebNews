@@ -29,8 +29,8 @@
             <div class="form-group col-md-6">
                 @Html.Label("Triều đại:", htmlAttributes: new { @class = "control-label col-md-4" })
                 <div class="col-md-8">
-                    @Html.EnumDropDownListFor(x => x.dynasty, new { @class = "form-control" })
-                    @Html.ValidationMessageFor(model => model.dynasty, "", new { @class = "text-danger" })
+                    @Html.EnumDropDownListFor(x => x.Games, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.Games, "", new { @class = "text-danger" })
                 </div>
             </div>
         </div>

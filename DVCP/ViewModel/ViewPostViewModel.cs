@@ -37,7 +37,7 @@ namespace DVCP.ViewModel
         public DateTime? edit_date { get; set; }
 
         [StringLength(50)]
-        public string dynasty { get; set; }
+        public string Games { get; set; }
 
         public int ViewCount { get; set; }
 

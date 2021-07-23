@@ -41,7 +41,7 @@ namespace DVCP.ViewModel
         [Display(Name = "Đề Xuất Quan Trọng")]
         HighestRated = 1,
     }
-    public enum Dynasty
+    public enum Games
     {
         //0
         [Display(Name = "Sea of Thieves")]
@@ -115,7 +115,7 @@ namespace DVCP.ViewModel
         [DataType(DataType.Upload)]
         public HttpPostedFileBase avatarFile { get; set; }
 
-        public Dynasty dynasty { get; set; }
+        public Games Games { get; set; }
 
         public Rated Rated { get; set; } = Rated.Normal;
 

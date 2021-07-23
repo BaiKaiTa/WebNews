@@ -19,7 +19,7 @@
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
-            context.WebInfo.AddOrUpdate( x =>x.id,
+            context.WebInfo.AddOrUpdate(x => x.id,
                 new WebInfo
                 {
                     id = 1,

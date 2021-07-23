@@ -18,8 +18,8 @@
         <div class="form-group col-md-7 pl-0 mb-0 pb-0">
             @Html.Label("GAMES:", htmlAttributes: new { @class = "control-label col-md-4 pl-0" })
             <div class="col-md-8 pb-0 mb-0">
-                @Html.EnumDropDownListFor(x => x.Dynasty, new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.Dynasty, "", new { @class = "text-danger" })
+                @Html.EnumDropDownListFor(x => x.Games, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Games, "", new { @class = "text-danger" })
             </div>
         </div>
         <div class="form-group col-md-8 pl-0 pt-1">

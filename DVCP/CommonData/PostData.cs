@@ -34,7 +34,7 @@ namespace DVCP.CommonData
             //    new SelectListItem {Text = "Tôn giáo", Value = "Tôn giáo"},
 
             //};
-            //List<SelectListItem> lstDynasty = new List<SelectListItem>
+            //List<SelectListItem> lstGames = new List<SelectListItem>
             //{
             //    //"Kiến trúc","Chất liệu","Trang phục","Binh bị","Quân sự","Thần thoại","Văn hóa","Dã sử","Phong tục"
             //};

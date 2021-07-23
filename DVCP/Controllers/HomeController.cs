@@ -55,7 +55,7 @@ namespace DVCP.Controllers
                     return View(new ViewPostViewModel
                     {
                         post_id = p.post_id,
-                        dynasty = p.dynasty,
+                        Games = p.Games,
                         create_date = p.create_date,
                         //firstTag = tagLists.FirstOrDefault().name,
                         post_review = p.post_review,
@@ -119,19 +119,19 @@ namespace DVCP.Controllers
             return View("CategoryAll");
 
         }
-        public ActionResult Dynasty(int? dynasty, int? page)
+        public ActionResult Games(int? Games, int? page)
         {
-            if(dynasty != null)
+            if(Games != null)
             {
                 int pageSize = 10;
                 int pageIndex = 1;
                 IPagedList<lstPostViewModel> post = null;
-                Dynasty d = (Dynasty)dynasty;
+                Games d = (Games)Games;
                 ViewBag.catname = d.GetDisplayName();
                 pageIndex = page.HasValue ? Convert.ToInt32(page) : 1;
                 post = db.postRepository.AllPosts()
                     .Where(m => m.status)
-                    .Where(m => m.dynasty.Equals(d.ToString()))
+                    .Where(m => m.Games.Equals(d.ToString()))
                     .OrderByDescending(m => m.create_date)
                     .Select(c => new lstPostViewModel
                     {
@@ -147,7 +147,7 @@ namespace DVCP.Controllers
 
                 return View(post);
             }
-            return View("DynastyAll");
+            return View("GamesAll");
             
 
         }
@@ -165,44 +165,44 @@ namespace DVCP.Controllers
             ViewBag.stitle = model.title;
             bool title = String.IsNullOrWhiteSpace(model.title);
             bool tag = taglist.Count == 0;
-            bool dynasty = model.Dynasty == null;
+            bool Games = model.Games == null;
             var check = 0;
-            if(title && tag &&  dynasty)
+            if(title && tag &&  Games)
             {
                 // cả 3 cái đều null
                 check = 1;
             }
-            else if (!title && !tag && !dynasty)
+            else if (!title && !tag && !Games)
             {
                 // cả 3 cái đều ko null
                 check = 2;
             }
-            else if(!title && tag && dynasty)
+            else if(!title && tag && Games)
             {
                 // chỉ title
                 check = 3;
             }
-            else if(title && !tag && dynasty)
+            else if(title && !tag && Games)
             {
                 // chỉ tag
                 check = 4;
             }
-            else if (title && tag && !dynasty)
+            else if (title && tag && !Games)
             {
                 // chỉ DN
                 check = 5;
             }
-            else if (!title && !tag && dynasty)
+            else if (!title && !tag && Games)
             {
                 // title và tag
                 check = 6;
             }
-            else if (!title && tag && !dynasty)
+            else if (!title && tag && !Games)
             {
                 // title và dn
                 check = 7;
             }
-            else if (title && !tag && !dynasty)
+            else if (title && !tag && !Games)
             {
                 // tag và dn
                 check = 8;
@@ -241,7 +241,7 @@ namespace DVCP.Controllers
                             // join to bring useful data
                             join c in conn.Posts on b.post_id equals c.post_id
                             where c.status == true
-                            where c.dynasty == model.Dynasty.ToString()
+                            where c.Games == model.Games.ToString()
                             where c.post_title.ToLower().Contains(model.title.ToLower())
                             // sắp theo 
                             orderby c.Rated
@@ -338,7 +338,7 @@ namespace DVCP.Controllers
                 case 5:
                     post = db.postRepository.AllPosts()
                  .Where(m => m.status)
-                 .Where(m => m.dynasty.Equals(model.Dynasty.ToString()))
+                 .Where(m => m.Games.Equals(model.Games.ToString()))
                  .OrderByDescending(m => m.create_date)
                  .Select(m => new lstPostViewModel
                  {
@@ -401,7 +401,7 @@ namespace DVCP.Controllers
                     post = db.postRepository.AllPosts()
                  .Where(m => m.status)
                  .Where(m => m.post_title.Contains(model.title))
-                 .Where(m => m.dynasty.Equals(model.Dynasty.ToString()))
+                 .Where(m => m.Games.Equals(model.Games.ToString()))
                  .OrderBy(m => m.post_title.Contains(model.title))
                  .Select(m => new lstPostViewModel
                  {
@@ -428,7 +428,7 @@ namespace DVCP.Controllers
                             from b in a.Tbl_POST
                                 //join to bring useful data
                             join c in conn.Posts on b.post_id equals c.post_id
-                            where c.dynasty == model.Dynasty.ToString()
+                            where c.Games == model.Games.ToString()
                             where c.status == true
                             // sắp theo so khớp
                             orderby c.create_date descending

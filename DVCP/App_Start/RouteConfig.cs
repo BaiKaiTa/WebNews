@@ -36,13 +36,13 @@ namespace DVCP
             );
             routes.MapRoute(
                 name: "games",
-                url: "games/{title}-{dynasty}",
-                defaults: new { controller = "Home", action = "Dynasty", dynasty = UrlParameter.Optional }
+                url: "games/{title}-{Games}",
+                defaults: new { controller = "Home", action = "Games", Games = UrlParameter.Optional }
             );
             routes.MapRoute(
                 name: "games2",
                 url: "games/",
-                defaults: new { controller = "Home", action = "Dynasty" }
+                defaults: new { controller = "Home", action = "Games" }
             );
             routes.MapRoute(
                 name: "Default",
