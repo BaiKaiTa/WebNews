@@ -2,7 +2,7 @@
 @using PagedList.Mvc;
 
 @{
-    ViewBag.Title = "Bài viết của "+Model.FirstOrDefault().tbl_User.fullname;
+    ViewBag.Title = "Bài viết của " + Model.FirstOrDefault().tbl_User.fullname;
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 <link href="~/Content/AdminLTE/plugins/datatables/dataTables.bootstrap4.css" rel="stylesheet" />
@@ -19,7 +19,7 @@
                         <div>
                             <label style="display:inline-block;font-weight:normal">Sắp xếp theo <b>@ViewBag.sortname</b> @ViewBag.Sort</label>
                         </div>
-                        @Html.ActionLink("Tiêu đề", "ListPost", new { sortOrder = "Title",id = Request.Params["id"] , CurrentSort = ViewBag.CurrentSort, titleStr = ViewBag.titleStr }) |
+                        @Html.ActionLink("Tiêu đề", "ListPost", new { sortOrder = "Title", id = Request.Params["id"], CurrentSort = ViewBag.CurrentSort, titleStr = ViewBag.titleStr }) |
                         @Html.ActionLink("Ngày đăng", "ListPost", new { sortOrder = "CreateDate", id = Request.Params["id"], CurrentSort = ViewBag.CurrentSort, titleStr = ViewBag.titleStr }) |
                         @Html.ActionLink("Lượt xem", "ListPost", new { sortOrder = "ViewCount", id = Request.Params["id"], CurrentSort = ViewBag.CurrentSort, titleStr = ViewBag.titleStr }) |
                     </div>
