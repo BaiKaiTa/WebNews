@@ -189,9 +189,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202107230456345_data.cs" />
-    <Compile Include="Migrations\202107230456345_data.Designer.cs">
-      <DependentUpon>202107230456345_data.cs</DependentUpon>
+    <Compile Include="Migrations\202107260131419_datanews.cs" />
+    <Compile Include="Migrations\202107260131419_datanews.Designer.cs">
+      <DependentUpon>202107260131419_datanews.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DVCPContext.cs" />
@@ -2336,8 +2336,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202107230456345_data.resx">
-      <DependentUpon>202107230456345_data.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202107260131419_datanews.resx">
+      <DependentUpon>202107260131419_datanews.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

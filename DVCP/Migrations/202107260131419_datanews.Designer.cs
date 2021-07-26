@@ -7,13 +7,13 @@ namespace DVCP.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class data : IMigrationMetadata
+    public sealed partial class datanews : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(data));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(datanews));
         
         string IMigrationMetadata.Id
         {
-            get { return "202107230456345_data"; }
+            get { return "202107260131419_datanews"; }
         }
         
         string IMigrationMetadata.Source
