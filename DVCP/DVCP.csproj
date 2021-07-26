@@ -1683,10 +1683,6 @@
     <Content Include="Content\ckfinder\plugins\dummy\lang\en.js" />
     <Content Include="Content\ckfinder\plugins\dummy\lang\pl.js" />
     <Content Include="Content\ckfinder\plugins\dummy\plugin.js" />
-    <Content Include="Content\ckfinder\plugins\fileeditor\bin\Debug\CKFinder_FileEditor.dll" />
-    <Content Include="Content\ckfinder\plugins\fileeditor\bin\Debug\CKFinder_FileEditor.pdb" />
-    <Content Include="Content\ckfinder\plugins\fileeditor\bin\Release\CKFinder_FileEditor.dll" />
-    <Content Include="Content\ckfinder\plugins\fileeditor\bin\Release\CKFinder_FileEditor.pdb" />
     <Content Include="Content\ckfinder\plugins\fileeditor\codemirror\lib\codemirror.css" />
     <Content Include="Content\ckfinder\plugins\fileeditor\codemirror\lib\codemirror.js" />
     <Content Include="Content\ckfinder\plugins\fileeditor\codemirror\mode\clike\clike.js" />
@@ -1714,16 +1710,8 @@
     <Content Include="Content\ckfinder\plugins\gallery\colorbox\jquery.colorbox-min.js" />
     <Content Include="Content\ckfinder\plugins\gallery\colorbox\jquery.min.js" />
     <Content Include="Content\ckfinder\plugins\gallery\colorbox\license.txt" />
-    <Content Include="Content\ckfinder\plugins\imageresize\bin\Debug\CKFinder_ImageResize.dll" />
-    <Content Include="Content\ckfinder\plugins\imageresize\bin\Debug\CKFinder_ImageResize.pdb" />
-    <Content Include="Content\ckfinder\plugins\imageresize\bin\Release\CKFinder_ImageResize.dll" />
-    <Content Include="Content\ckfinder\plugins\imageresize\bin\Release\CKFinder_ImageResize.pdb" />
     <Content Include="Content\ckfinder\plugins\imageresize\images\mini.gif" />
     <Content Include="Content\ckfinder\plugins\imageresize\plugin.js" />
-    <Content Include="Content\ckfinder\plugins\watermark\bin\Debug\CKFinder_Watermark.dll" />
-    <Content Include="Content\ckfinder\plugins\watermark\bin\Debug\CKFinder_Watermark.pdb" />
-    <Content Include="Content\ckfinder\plugins\watermark\bin\Release\CKFinder_Watermark.dll" />
-    <Content Include="Content\ckfinder\plugins\watermark\bin\Release\CKFinder_Watermark.pdb" />
     <Content Include="Content\ckfinder\plugins\watermark\logo.gif" />
     <Content Include="Content\ckfinder\skins\kama\app.css" />
     <Content Include="Content\ckfinder\skins\kama\host.css" />

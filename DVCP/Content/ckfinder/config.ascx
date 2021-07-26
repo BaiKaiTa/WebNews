@@ -137,12 +137,12 @@
         acl.FolderView = true;
         acl.FolderCreate = true;
         acl.FolderRename = true;
-        acl.FolderDelete = false;
+        acl.FolderDelete = true;
 
         acl.FileView = true;
         acl.FileUpload = true;
         acl.FileRename = true;
-        acl.FileDelete = false;
+        acl.FileDelete = true;
         //acl.FolderCreate = true;
         // acl.FolderRename = true;
         // acl.FolderDelete = true;
